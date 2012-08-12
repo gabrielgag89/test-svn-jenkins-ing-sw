@@ -1,7 +1,7 @@
 package fabricaExpertos;
 
-import generar_factura_paciente.DecoradorExpertoGenerarFacturaPaciente;
 import cobrar_factura_paciente.DecoradorExpertoCobrarFacturaPaciente;
+import generar_factura_paciente.DecoradorExpertoGenerarFacturaPaciente;
 
 public class FabricaExpertos {
    private static FabricaExpertos instancia;
@@ -16,11 +16,11 @@ public class FabricaExpertos {
    } // fin del método getInstancia
 
    public Object getExperto(String nombre){
-      if(nombre.equals("GenerarFacturarPaciente"))
-         return new DecoradorExpertoGenerarFacturaPaciente();
-      else if(nombre.equals("CobrarFacturaPaciente"))
-         return new DecoradorExpertoCobrarFacturaPaciente();
-      else
-         return null;
+//      if(nombre.equals("GenerarFacturarPaciente"))
+//         return new DecoradorExpertoGenerarFacturaPaciente();
+//      else if(nombre.equals("CobrarFacturaPaciente"))
+//         return new DecoradorExpertoCobrarFacturaPaciente();
+//      else
+//         return null;
     } // fin del método getExperto
 } // fin de la clase FabricaExpertos
