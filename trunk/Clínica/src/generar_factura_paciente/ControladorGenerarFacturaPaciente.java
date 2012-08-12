@@ -1,9 +1,9 @@
 package generar_factura_paciente;
 
-import java.util.List;
-import fabricaExpertos.FabricaExpertos;
-import dtos.DTOFichaInternacion;
 import dtos.DTOFacturaPaciente;
+import dtos.DTOFichaInternacion;
+import fabricaExpertos.FabricaExpertos;
+import java.util.List;
 
 public class ControladorGenerarFacturaPaciente {
    private ExpertoGenerarFacturaPaciente experto;
@@ -30,7 +30,7 @@ public class ControladorGenerarFacturaPaciente {
       this.iuGenerarFactura.cargaNumFicha(numFicha);
    } // fin del método cargarNumFicha
    
-   public DTOFichaInternacion buscarFichaInternacion(int numFicha){ 
+   public string buscarFichaInternacion(int numFicha){ 
       if(this.experto == null)
          this.experto = (ExpertoGenerarFacturaPaciente) FabricaExpertos.getInstancia().getExperto("GenerarFacturarPaciente");
       
