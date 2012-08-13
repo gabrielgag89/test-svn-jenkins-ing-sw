@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import dtos.DTOFacturaPaciente;
 
-public class SuscriptorGenerarFacturaPaciente {
+private class SuscriptorGenerarFacturaPaciente {
    private static SuscriptorGenerarFacturaPaciente instancia;
    private List<ObservadorGenerarFacturaPaciente> observadores = new  ArrayList<ObservadorGenerarFacturaPaciente>();
    
