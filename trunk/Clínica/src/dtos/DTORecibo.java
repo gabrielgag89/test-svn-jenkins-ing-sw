@@ -5,7 +5,7 @@ import java.util.Date;
 public class DTORecibo {
    private int nroRecibo;
    private int numFactura;
-   private String fecha;
+   private Date fecha;
    private double monto;
 
    public int getNroRecibo() {
