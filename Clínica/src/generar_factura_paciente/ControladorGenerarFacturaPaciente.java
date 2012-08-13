@@ -30,7 +30,7 @@ public class ControladorGenerarFacturaPaciente {
       this.iuGenerarFactura.cargaNumFicha(numFicha);
    } // fin del método cargarNumFicha
    
-   public string buscarFichaInternacion(int numFicha){ 
+   public DTOFichaInternacion buscarFichaInternacion(int numFicha){ 
       if(this.experto == null)
          this.experto = (ExpertoGenerarFacturaPaciente) FabricaExpertos.getInstancia().getExperto("GenerarFacturarPaciente");
       
